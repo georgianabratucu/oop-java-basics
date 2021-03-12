@@ -1,6 +1,23 @@
-# 1. Encapsulation Exercise
+# OOP JAVA BASICS EXAMPLES
 
-##  1.1. Create new java class BankAccount with
+## 1. Create a new module with your firstname-lastname (ex: bratucu-georgiana)
+```bash   
+      Right click on oop-java-basic module -> New -> Module
+      Select Maven
+      Set JDK 1.8 as Module SDK
+      Complete parent & name
+```
+
+## 2. Create the following packages starting from /src/main/java
+```bash
+- com
+    - cegeka
+        - academy
+```
+# 3. Encapsulation Exercise
+
+## 3.1. Create a new package named encapsulation
+## 3.2. Create new java class BankAccount with
 
 ```bash
 fields: balance and limit 
@@ -9,7 +26,7 @@ access modifier: private
 getters & setters
 ```
 
-## 1.2. Create new java class EncapsulationTest with a main method
+## 3.3. Create new java class EncapsulationTest with a main method
 
 ```bash
 public static void main(String[] args) {
@@ -19,19 +36,20 @@ public static void main(String[] args) {
         System.out.println(bankAccount.getBalance());
     }
 ```
-## 1.3. set value for the limit member
+## 3.4. set value for the limit member
 ```bash
 bankAccount.setLimit(20);
 ```
-## 1.4. get the value for the limit member
+## 3.5. get the value for the limit member
 ```bash
 System.out.println(bankAccount.getLimit());
 ```
-## 1.5. run the main method
+## 3.6. run the main method
 
-# 2. Composition Exercise
+# 4. Composition Exercise
 
-##  2.1. Create new java class Person with
+## 4.1. Create a new package named composition
+## 4.2. Create new java class Person with
 
 ```bash
 fields: name and bankAccount 
@@ -44,7 +62,7 @@ a method:
     }
 ```
 
-## 3.2. Create new java class CompositionTest with a main method
+## 4.3. Create new java class CompositionTest with a main method
 
 ```bash
     public static void main(String[] args) {
@@ -55,11 +73,12 @@ a method:
         System.out.println(person.getBalance());
     }
 ```
-## 2.3. run the main method
+## 4.4. run the main method
 
-# 3. SINGLE Inheritance Exercise
+# 5. SINGLE Inheritance Exercise
 
-##  3.1. Create new java class Student extends Person with
+## 5.1. Create a new package named inheritance
+## 5.2. Create new java class Student extends Person with
 
 ```bash
 fields: college
@@ -68,7 +87,7 @@ access modifier: private
 getter
 ```
 
-## 3.2. Create new java class InheritanceTest with a main method
+## 5.3. Create new java class InheritanceTest with a main method
 
 ```bash
 public static void main(String[] args) {
@@ -80,11 +99,12 @@ public static void main(String[] args) {
     }
 ```
 
-## 3.3. run the main 
+## 5.4. run the main 
 
-# 4. MULTILEVEL Inheritance Exercise
+# 6. MULTILEVEL Inheritance Exercise
 
-##  4.1. Create new java class ForeignStudent extends Student with
+## 6.1. Use the package created at step 5
+## 6.2. Create new java class ForeignStudent extends Student with
 
 ```bash
 fields: country
@@ -93,7 +113,7 @@ access modifier: private
 getter
 ```
 
-## 4.2. In the class InheritanceTest created above add in mai method
+## 6.3. In the class InheritanceTest created above add in mai method
 
 ```bash
         ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", "France");
@@ -102,11 +122,12 @@ getter
         System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
 ```
 
-## 4.3. run the main method
+## 6.4. run the main method
 
-# 5. HIERARCHICAL Inheritance Exercise
+# 7. HIERARCHICAL Inheritance Exercise
 
-##  5.1. Create new java class Teacher extends Person with
+## 7.1. Use the package created at step 5
+## 7.2. Create new java class Teacher extends Person with
 
 ```bash
 fields: position
@@ -115,7 +136,7 @@ access modifier: private
 getter
 ```
 
-## 5.2. In the class InheritanceTest created above add in mai method
+## 7.3. In the class InheritanceTest created above add in mai method
 
 ```bash
         Student stud = new Student("Maria", bankAccount, "E-BUSINESS");
@@ -127,7 +148,7 @@ getter
         System.out.println("Teacher position is: "+ teacher.getPosition());
 ```
 
-## 5.3. run the main method
+## 7.3. run the main method
 
 
 
