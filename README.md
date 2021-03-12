@@ -113,7 +113,7 @@ access modifier: private
 getter
 ```
 
-## 6.3. In the class InheritanceTest created above add in mai method
+## 6.3. In the class InheritanceTest created above add in main method
 
 ```bash
         ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", "France");
@@ -136,7 +136,7 @@ access modifier: private
 getter
 ```
 
-## 7.3. In the class InheritanceTest created above add in mai method
+## 7.3. In the class InheritanceTest created above add in main method
 
 ```bash
         Student stud = new Student("Maria", bankAccount, "E-BUSINESS");
