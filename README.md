@@ -13,7 +13,7 @@
  - com
     - cegeka
           -java
-              - academy
+             - academy
 ```
 # 3. Encapsulation Exercise
 
@@ -73,25 +73,25 @@ a method:
 ## 4.3. Create new java class CompositionTest with a main method
 
 ```bash
-    public static void main(String[] args) {
+public static void main(String[] args) {
     
-    }
+}
 ```
 ## 4.4. Create new instance of the BankAccount class and set value for the balance member 
 
 ```bash
-     BankAccount bankAccount = new BankAccount();
-     bankAccount.setBalance(1000);
+BankAccount bankAccount = new BankAccount();
+bankAccount.setBalance(1000);
 ```
 
 ## 4.5. Create new instance of the Person class
 ```bash
-     Person person = new Person("ana", bankAccount);
+Person person = new Person("ana", bankAccount);
 ``` 
 
 ## 4.4. Call the method getBalance() and run the main method
 ```bash
-    System.out.println(person.getBalance());
+System.out.println(person.getBalance());
 ```
 
 # 5. SINGLE Inheritance Exercise
@@ -111,29 +111,29 @@ getter
 ```bash
 public static void main(String[] args) {
 
-    }
+}
 ```
 ## 5.4. Create new instance of the BankAccount class and set value for the balance member 
 
 ```bash
-     BankAccount bankAccount = new BankAccount();
-     bankAccount.setBalance(1000);
+BankAccount bankAccount = new BankAccount();
+bankAccount.setBalance(1000);
 ```
 
 ## 5.5. Create new instance of the Student class 
 
 ```bash
-     Student student = new Student("ana", bankAccount, "CSIE");
+Student student = new Student("ana", bankAccount, "CSIE");
 ```
 
 ## 5.6. Call the method getBalance() from the parent class Person
 ```bash
-    System.out.println(student.getBalance());
+System.out.println(student.getBalance());
 ```
 
 ## 5.7. Call the method getCollege()
 ```bash
-    System.out.println("Student college is: "+ student.getCollege());
+System.out.println("Student college is: "+ student.getCollege());
 ```
 
 ## 5.8. run the main 
@@ -153,22 +153,22 @@ getter
 ## 6.3. In the class InheritanceTest created above, in the main method, create new instance of class ForeignStudent
 
 ```bash
-    ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", "France");
+ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", "France");
 ```
 
 ## 6.4. Call the method getBalance() from the parent class Person
 ```bash
-    System.out.println(foreignStudent.getBalance());
+System.out.println(foreignStudent.getBalance());
 ```
 
 ## 6.5. Call the method getCollege() from the parent class Student
 ```bash
-    System.out.println("Foreign student college is: "+ foreignStudent.getCollege());
+System.out.println("Foreign student college is: "+ foreignStudent.getCollege());
 ```
 
 ## 6.6. Call the method getCountry()
 ```bash
-    System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
+System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
 ```
 
 ## 6.7. run the main method
@@ -188,18 +188,18 @@ getter
 ## 7.3. In the class InheritanceTest created above, in main method, create a new instance of class Teacher
 
 ```bash
-    Teacher teacher = new Teacher("Popescu", bankAccount, "Decan");
-        System.out.println("Teacher position is: "+ teacher.getPosition());
+Teacher teacher = new Teacher("Popescu", bankAccount, "Decan");
+System.out.println("Teacher position is: "+ teacher.getPosition());
 ```
 
 ## 7.4. Call the method getBalance() from the parent class Person
 ```bash
-    System.out.println(teacher.getBalance());
+System.out.println(teacher.getBalance());
 ```
 
 ## 7.5. Call the method getPosition()
 ```bash
-    System.out.println("Teacher position is: "+ teacher.getPosition());
+System.out.println("Teacher position is: "+ teacher.getPosition());
 ```
 
 ## 7.6. run the main method
