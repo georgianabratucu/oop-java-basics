@@ -360,7 +360,7 @@ Drawable square = new Square("Green", 4.7);
 square.draw();
 ```
 
-## [OPTIONAL] OOP exercises
+## [Homework] OOP exercises
 
 Think and implement a logical hierarchy of classes according to the schema below:
 
