@@ -366,6 +366,7 @@ Think and implement a logical hierarchy of classes according to the schema below
 
 ![alt_text](https://github.com/georgianabratucu/oop-java-basics/blob/main/tema.jpg)
 
+```bash
 Requirements of implementation:
 - each class must have
                  - at least 1 private attribute
@@ -376,4 +377,4 @@ Requirements of implementation:
 - all classes and methods will be tested in the main method
 
 
-
+```
