@@ -364,6 +364,8 @@ square.draw();
 
 Think and implement a logical hierarchy of classes according to the schema below:
 
+![alt_text](https://github.com/georgianabratucu/oop-java-basics/blob/main/tema.jpg)
+
 Requirements of implementation:
 - each class must have
                  - at least 1 private attribute
