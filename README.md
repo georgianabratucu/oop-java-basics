@@ -372,7 +372,7 @@ Requirements of implementation:
                  - at least 1 private attribute
                  - should implements getters and setters
                  - various types of constructors
-- a class in the hierarchy must be abstract and should contain at least one abstract method
+- one of the classes must be abstract and should contain at least one abstract method
 - one of the classes must implement an interface with at least 1 method
 - all classes and methods will be tested in the main method
 
