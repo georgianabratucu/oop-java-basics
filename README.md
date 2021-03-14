@@ -221,7 +221,7 @@ public void eat() {
     }
 ```
 
-## 8.3. Create new java class Cat extends Animal with a method
+## 8.3. Create new java class Cat extends Animal which override eat() method for superclass
 
 ```bash
     @Override
@@ -242,7 +242,7 @@ public static void main(String[] args) {
 Animal animal = new Animal();
 ```
 
-## 8.6. Create new instance of the Cat class - animal reference and but cat object
+## 8.6. Create new instance of the Cat class - animal reference but cat object
 ```bash
 Animal cat = new Cat();
 ```
@@ -279,6 +279,78 @@ calculator.add(10, 20);
 calculator.add(10, 20, 30);
 ```
 
+## 10. Abstraction
+## 10.1. Create a new astract class named Shape with
+```bash
+fields: color
+type: String
+access modifier: private
+constructor with parameters
+an abstract method: public abstract double area();
+a concrete method:  
+public void getColor() {
+    System.out.println("Shape color is " + color);
+}
+```
+
+## 10.2. Create a new concrete class named Square extends Shape with
+```bash
+fields: length
+type: double
+access modifier: private
+constructor with all parameters
+override the method area() from parent:
+@Override
+    public double area() {
+        return length * length;
+    }
+```
+
+## 10.3. Create a new instance of the Square
+```bash
+Shape shape = new Square("Red", 8.1);
+```
+
+## 10.4. Call area() and getColor() methods
+```bash
+System.out.println(shape.area());
+shape.getColor();
+```
+
+## 10.5. Create a new interface Drawable with
+```bash
+a method: void draw();
+```
+
+## 10.6. Modify the class Square created earlier to implements Drawable interface
+```bash
+public class Square extends Shape implements Drawable
+```
+
+## 10.7. Override the method from interface
+```bash
+public void draw() {
+
+        System.out.println("Drawing a square");
+
+        for(int i = 0; i < Math.round(length); i++) {
+            for(int j = 0; j < Math.round(length); j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+```
+
+## 10.8. In the main class Abstraction Test create a new instance of Square
+```bash
+Drawable square = new Square("Green", 4.7);
+```
+
+## 10.9. Call the method draw()
+```bash
+square.draw();
+```
 
 
 
