@@ -2,10 +2,10 @@
 
 ## 1. Create a new module with your firstname-lastname (ex: bratucu-georgiana)
 ```bash   
-      Right click on oop-java-basic module -> New -> Module
-      Select Maven
-      Set JDK 1.8 as Module SDK
-      Complete parent & name
+Right click on oop-java-basic module -> New -> Module
+Select Maven
+Set JDK 1.8 as Module SDK
+Complete parent & name
 ```
 
 ## 2. Create the following packages starting from /src/main/java
@@ -27,6 +27,7 @@ fields: balance and limit
 type: double
 access modifier: private
 getters & setters
+Obs: balance cannot be smaller than 0
 ```
 
 ## 3.3. Create new java class EncapsulationTest with a main method
@@ -89,7 +90,7 @@ bankAccount.setBalance(1000);
 
 ## 4.5. Create new instance of the Person class
 ```bash
-Person person = new Person("ana", bankAccount);
+Person person = new Person("John", bankAccount);
 ``` 
 
 ## 4.4. Call the method getBalance() and run the main method
@@ -107,6 +108,7 @@ System.out.println(person.getBalance());
 fields: college
 type: String
 access modifier: private
+constructor with all parameters
 getter
 ```
 
@@ -127,7 +129,7 @@ bankAccount.setBalance(1000);
 ## 5.5. Create new instance of the Student class 
 
 ```bash
-Student student = new Student("ana", bankAccount, "CSIE");
+Student student = new Student("John", bankAccount, "CSIE");
 ```
 
 ## 5.6. Call the method getBalance() from the parent class Person
@@ -140,43 +142,46 @@ System.out.println(student.getBalance());
 System.out.println("Student college is: "+ student.getCollege());
 ```
 
-## 5.8. run the main 
-
 
 # 6. MULTILEVEL Inheritance Exercise
 
 ## 6.1. Use the package created at step 5
-## 6.2. Create new java class ForeignStudent extends Student with
+## 6.2. Create new enum Country with values:
+
+```bash
+IT, FR, RO
+```
+
+## 6.3. Create new java class ForeignStudent extends Student with
 
 ```bash
 fields: country
-type: String
+type: Country
 access modifier: private
+create a constructor with all parameters
 getter
 ```
 
-## 6.3. In the class InheritanceTest created above, in the main method, create new instance of class ForeignStudent
+## 6.4. In the class InheritanceTest created above, in the main method, create new instance of class ForeignStudent
 
 ```bash
 ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", "France");
 ```
 
-## 6.4. Call the method getBalance() from the parent class Person
+## 6.5. Call the method getBalance() from the parent class Person
 ```bash
 System.out.println(foreignStudent.getBalance());
 ```
 
-## 6.5. Call the method getCollege() from the parent class Student
+## 6.6. Call the method getCollege() from the parent class Student
 ```bash
 System.out.println("Foreign student college is: "+ foreignStudent.getCollege());
 ```
 
-## 6.6. Call the method getCountry()
+## 6.7. Call the method getCountry()
 ```bash
 System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
 ```
-
-## 6.7. run the main method
 
 
 # 7. HIERARCHICAL Inheritance Exercise
@@ -188,6 +193,7 @@ System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
 fields: position
 type: String
 access modifier: private
+create constructor with all parameters
 getter
 ```
 
@@ -208,7 +214,6 @@ System.out.println(teacher.getBalance());
 System.out.println("Teacher position is: "+ teacher.getPosition());
 ```
 
-## 7.6. run the main method
 
 # 8. Dynamic Polymorphism - method overriding Exercise
 
@@ -253,6 +258,7 @@ animal.eat();
 cat.eat();
 ```
 
+
 # 9. Static Polymorphism - method overloading Exercise
 ## 9.1. In the package polymorphism, create a new java class Calculator with two methods
 ```bash
@@ -279,8 +285,9 @@ calculator.add(10, 20);
 calculator.add(10, 20, 30);
 ```
 
-## 10. Abstraction
-## 10.1. Create a new astract class named Shape with
+
+# 10. Abstraction
+## 10.1. Create new abstract class named Shape with
 ```bash
 fields: color
 type: String
@@ -293,7 +300,7 @@ public void getColor() {
 }
 ```
 
-## 10.2. Create a new concrete class named Square extends Shape with
+## 10.2. Create new concrete class named Square extends Shape with
 ```bash
 fields: length
 type: double
@@ -319,7 +326,7 @@ shape.getColor();
 
 ## 10.5. Create a new interface Drawable with
 ```bash
-a method: void draw();
+method: void draw();
 ```
 
 ## 10.6. Modify the class Square created earlier to implements Drawable interface
@@ -327,7 +334,8 @@ a method: void draw();
 public class Square extends Shape implements Drawable
 ```
 
-## 10.7. Override the method from interface
+## 10.7. In class Square override the method from interface
+
 ```bash
 public void draw() {
 
@@ -342,7 +350,7 @@ public void draw() {
     }
 ```
 
-## 10.8. In the main class Abstraction Test create a new instance of Square
+## 10.8. In the main class AbstractionTest create a new instance of Square
 ```bash
 Drawable square = new Square("Green", 4.7);
 ```
