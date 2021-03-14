@@ -15,6 +15,8 @@
           -java
              - academy
 ```
+
+
 # 3. Encapsulation Exercise
 
 ## 3.1. Create a new package named encapsulation
@@ -32,7 +34,7 @@ getters & setters
 ```bash
 public static void main(String[] args) {
 
-    }
+}
 ```
 
 ## 3.4. Create new instance of the encapsulated class
@@ -50,9 +52,10 @@ bankAccount.setBalance(1000);
 ## 3.6. Get the value for the balance member
 
 ```bash
-System.out.println(bankAccount.getLimit());
+System.out.println(bankAccount.getBalance());
 ```
 ## 3.6. Run the main method
+
 
 # 4. Composition Exercise
 
@@ -93,6 +96,7 @@ Person person = new Person("ana", bankAccount);
 ```bash
 System.out.println(person.getBalance());
 ```
+
 
 # 5. SINGLE Inheritance Exercise
 
@@ -138,6 +142,7 @@ System.out.println("Student college is: "+ student.getCollege());
 
 ## 5.8. run the main 
 
+
 # 6. MULTILEVEL Inheritance Exercise
 
 ## 6.1. Use the package created at step 5
@@ -173,6 +178,7 @@ System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
 
 ## 6.7. run the main method
 
+
 # 7. HIERARCHICAL Inheritance Exercise
 
 ## 7.1. Use the package created at step 5
@@ -203,6 +209,77 @@ System.out.println("Teacher position is: "+ teacher.getPosition());
 ```
 
 ## 7.6. run the main method
+
+# 8. Dynamic Polymorphism - method overriding Exercise
+
+## 8.1. Create a new package named polymorphism
+## 8.2. Create new java class Animal with a method
+
+```bash
+public void eat() {
+        System.out.println("Animals can eat");
+    }
+```
+
+## 8.3. Create new java class Cat extends Animal with a method
+
+```bash
+    @Override
+    public void eat() {
+        System.out.println("Cats can eat");
+    }
+```
+
+## 8.4. Create new java class PolymorphismTest with a main method
+```bash
+public static void main(String[] args) {
+
+}
+```
+
+## 8.5. Create new instance of the Animal class - animal reference and object
+```bash
+Animal animal = new Animal();
+```
+
+## 8.6. Create new instance of the Cat class - animal reference and but cat object
+```bash
+Animal cat = new Cat();
+```
+
+## 8.6. Call method eat() for both objects created above
+```bash
+animal.eat();
+cat.eat();
+```
+
+# 9. Static Polymorphism - method overloading Exercise
+## 9.1. In the package polymorphism, create a new java class Calculator with two methods
+```bash
+    public void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    public void add(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
+```
+## 9.2. Create new instance of the Calculator class
+```bash
+Calculator calculator = new Calculator();
+```
+
+## 9.3. Call method with 2 parameters
+```bash
+calculator.add(10, 20);
+```
+
+## 9.3. Call method with 3 parameters
+```bash
+calculator.add(10, 20, 30);
+```
+
+
 
 
 
