@@ -14,7 +14,7 @@ public class InheritanceTest {
         System.out.println("Student college is: "+ student.getCollege());
 
         //MULTILEVEL
-        ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", "France");
+        ForeignStudent foreignStudent = new ForeignStudent("ana", bankAccount, "CSIE", Country.FR);
         System.out.println(foreignStudent.getBalance());
         System.out.println("Foreign student college is: "+ foreignStudent.getCollege());
         System.out.println("Foreign student country is: "+ foreignStudent.getCountry());
